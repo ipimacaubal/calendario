@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg" href="%PUBLIC_URL%/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="IPIM" />
+    <meta name="description" content="Web site institucional da igreja presbiteriana indepentende de macaubal" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>::. IPI Macaubal .::</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #1F212A;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .font-default {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .box-content {
+            height: 100%;
+            margin: 1.5rem 1.5rem;
+            padding: 0 1.5rem;
+        }
+
+        .box-items {
+            padding: 0;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .box-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .title-center {
+            text-align: center;
+        }
+
+        h2.calendar-title {
+            color: #3c1691;
+            font-weight: 500;
+        }
+
+        .box-calendar {
+            height: 100%;
+        }
+
+        .box-button-new-request {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .left-button-new-request {
+            margin-left: 1rem;
+        }
+
+        .new-request {
+            font-size: 1.1rem;
+        }
+
+        .button-default {
+            background: #3c1691;
+            color: #fff;
+            border-radius: 5px;
+            border: 1px solid #3c1691;
+            padding: .9rem;
+            text-align: center;
+        }
+
+        a.button-default {
+            text-decoration: none;
+        }
+
+        .divider-hr {
+            height: 15px;
+            background: #fff;
+            width: 7px;
+            margin-top: 0;
+            margin-bottom: 0;
+            border: none;
+            display: none;
+        }
+
+        .flex-header {
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-size {
+            width: 60px;
+            height: auto;
+        }
+
+        .left-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .right-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .margin-ghost {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        @media (max-width: 1000px) {
+            .flex-header {
+                align-items: center;
+                justify-content: center;
+                gap: .5rem;
+                margin: 1rem 2rem;
+            }
+
+            .left-header {
+                justify-content: center;
+            }
+
+            .right-header {
+                justify-content: center;
+            }
+
+            .left-button-new-request {
+                margin-left: 0;
+            }
+
+            .divider-hr-header {
+                display:none;
+            }
+
+            h2.calendar-title {
+                margin-top: .3rem;
+                margin-bottom: 0;
+            }
+
+            .box-button-new-request {
+                margin-top: .5rem;
+                margin-bottom: 0;
+            }
+
+            .divider-hr {
+                display: flex;
+            }
+
+            .margin-ghost {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-content">
+        <div class="box-items box-header">
+            <div class="title-center flex-header">
+                <div class="left-header">
+                    <img class="logo-size" src="https://seeklogo.com/images/I/IPI-logo-48D9140A21-seeklogo.com.png"
+                        alt="logo ipi" />
+                    <h2 class="calendar-title">Calendário - IPI Macaubal</h2>
+                </div>
+
+                <hr class="divider-hr-header" />
+
+                <div class="box-button-new-request right-header">
+                    <span class="new-request">Quer solicitar um novo evento?</span>
+                    <a class="left-button-new-request button-default" href="https://forms.gle/QBLb1JVNpouqJBsNA"
+                        target="_blank">Clique aqui</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider-hr" />
+        <div class="margin-ghost"></div>
+
+        <div class="box-items bottom-item box-calendar">
+            <div class="title-center box-calendar">
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTitle=1&title=Atividades%20IPI%202023&src=NjA2NzM4M2NmOWVlN2M0NDk2MzU4NDQyOTRjZjhlOGVmNjVkNmUyNjQzMWViNDA0NmFhZjAyYWI4ZmE3ZjY2MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZTViMjE1NjRjYzQwNGJjZWEzMjFkNzE4ZjNlNDk4MjdhYmU5Y2YzY2RjODJlMzJmNmI5NjQ1NjVkMGZhZjZmY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YmFmYzBmNDc0NTc3MjBlMTczN2QxZWNhOGFiOGYwMTA0ODBiMGQyYzQwM2NkZDVlYmY0NThiZGVkN2Q2NzE0OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MGNmYzg4MzI0Y2EwN2EyZGNhN2ZlZTQ5MThmZjFlNTA5YjcyMjEzNzQ1YjNmZGMyMDQ5OTk4ZTRkNzg2MTE2ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%23F09300&color=%23cc0092&color=%23c9cc00&color=%230B8043"
+                    style="margin-top:10px" width="100%" height="97%" frameborder="0" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</html>
